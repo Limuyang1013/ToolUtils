@@ -173,7 +173,7 @@ public class SPUtils {
 
 
     /**
-     * 清空List<String>所有数据
+         * 清空List<String>所有数据
      *
      * @param context 上下文参数
      * @param key     List<String>对应的key
