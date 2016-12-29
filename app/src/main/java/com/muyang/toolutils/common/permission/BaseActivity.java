@@ -29,19 +29,19 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public static void requestRunTimePermission(String[] permissions, IPermission listener) {
-        Activity topAactivity = ActivityCollector.getTopActivity();
-        if (topAactivity == null) {
+        Activity topActivity = ActivityCollector.getTopActivity();
+        if (topActivity == null) {
             return;
         }
         mListener = listener;
         List<String> permissionList = new ArrayList<>();
         for (String permission : permissions) {
-            if (ContextCompat.checkSelfPermission(topAactivity, permission) != PackageManager.PERMISSION_GRANTED) {
+            if (ContextCompat.checkSelfPermission(topActivity, permission) != PackageManager.PERMISSION_GRANTED) {
                 permissionList.add(permission);
             }
         }
         if (!permissionList.isEmpty()) {
-            ActivityCompat.requestPermissions(topAactivity, permissionList.toArray(new String[permissionList.size()]), REQUEST_CODE);
+            ActivityCompat.requestPermissions(topActivity, permissionList.toArray(new String[permissionList.size()]), REQUEST_CODE);
         } else {
             //doSomething
             mListener.onGranted();
