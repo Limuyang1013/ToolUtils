@@ -32,3 +32,15 @@
 - 加载圆图：loadCircleImage(Context context, ImageView imageView, String imgUrl)
 - 加载模糊的圆角的图片：loadBlurCircleImage(Context context, ImageView imageView, String imgUrl)
 - ....
+
+#### permission---Android6.0运行时权限获取封装工具类
+
+[**传送门**](https://github.com/GiitSmile/ToolUtils/tree/master/app/src/main/java/com/muyang/toolutils/common/permission)
+
+**注意事项** 此封装类根据郭霖在2106/12/27日作出的视频直播内容制作，[**视频地址**](http://edu.csdn.net/course/detail/3539)
+
+**简单使用方法**：
+
+继承BaseActivity传入所需权限，并且记得还要在AndroidManifest文件中申请所请求的权限
+requestRunTimePermission(String[] permissions, IPermission listener)
+回调接口提供onGranted()和onDenied(List<String> deniedPermission)两个回调方法供使用
