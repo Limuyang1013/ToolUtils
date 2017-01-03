@@ -42,5 +42,7 @@
 **简单使用方法**：
 
 继承BaseActivity传入所需权限，并且记得还要在AndroidManifest文件中申请所请求的权限
+
 requestRunTimePermission(String[] permissions, IPermission listener)
+
 回调接口提供onGranted()和onDenied(List<String> deniedPermission)两个回调方法供使用
