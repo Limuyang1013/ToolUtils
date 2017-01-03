@@ -37,7 +37,7 @@
 
 [**传送门**](https://github.com/GiitSmile/ToolUtils/tree/master/app/src/main/java/com/muyang/toolutils/common/permission)
 
-**注意事项** 此封装类根据郭霖在2106/12/27日作出的视频直播内容制作，[**视频地址**](http://edu.csdn.net/course/detail/3539)
+**注意事项** 此封装类根据郭霖在2016/12/27日作出的视频直播内容制作，[**视频地址**](http://edu.csdn.net/course/detail/3539)
 
 **简单使用方法**：
 
