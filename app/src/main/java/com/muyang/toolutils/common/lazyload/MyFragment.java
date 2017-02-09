@@ -1,4 +1,4 @@
-package com.muyang.toolutils.common;
+package com.muyang.toolutils.common.lazyload;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
